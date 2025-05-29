@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact Us - GreenScape Gardening Services</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8faf6;
+    color: #2f4f2f;
+    line-height: 1.6;
+    padding: 2rem 1rem;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 2.6rem;
+    color: #3b633b;
+    border-bottom: 4px solid #6ba363;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+  p {
+    margin-bottom: 1.2rem;
+  }
+  .contact-info {
+    background-color: #d0e2cd;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: inset 0 0 10px #a4bea7;
+    margin-bottom: 2rem;
+  }
+  .contact-info h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .contact-info p {
+    margin: 0.3rem 0;
+  }
+  form.contact-form {
+    background-color: #e8f1e8;
+    padding: 2rem 1.8rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  form.contact-form label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+  }
+  form.contact-form input,
+  form.contact-form textarea {
+    width: 100%;
+    padding: 0.7rem 0.9rem;
+    margin-bottom: 1.2rem;
+    border: 1.5px solid #a8cbb7;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    resize: vertical;
+  }
+  form.contact-form textarea {
+    min-height: 120px;
+  }
+  form.contact-form button {
+    background-color: #557a4a;
+    color: #f1f8f1;
+    padding: 0.9rem 1.8rem;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  form.contact-form button:hover {
+    background-color: #466338;
+  }
+  footer {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #557a4a;
+    padding-bottom: 2rem;
+  }
+  @media (max-width: 600px) {
+    body {
+      padding: 1rem;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <main>
+    <h1>Contact Us</h1>
+
+    <p>We would love to hear from you! Whether you have questions about our gardening services, need a custom quote, or want expert advice about your outdoor space, our team at GreenScape Gardening Services is here to help.</p>
+    <p>Your garden is your sanctuary, and we believe every question matters. Reach out anytime — we’re friendly, knowledgeable, and committed to making your gardening experience seamless and enjoyable.</p>
+
+    <section class="contact-info" aria-label="Contact information">
+      <h2>Our Contact Information</h2>
+      <p><strong>Address:</strong> 20 Cooper Square, New York, NY 10003, USA</p>
+      <p><strong>Phone:</strong> +1 (855) 224-9667</p>
+      <p><strong>Email:</strong> <a href="mailto:contact@greenscapegardening.com">contact@greenscapegardening.com</a></p>
+      <p><strong>Business Hours:</strong> Monday to Friday, 8:00 AM – 6:00 PM</p>
+    </section>
+
+    <section aria-label="Enquiry form">
+      <form class="contact-form" action="#" method="POST" onsubmit="alert('Thank you! We have received your message and will get back to you shortly.'); return false;" aria-describedby="form-description">
+        <p id="form-description">Please fill out the form below and we’ll respond as quickly as possible.</p>
+        <label for="name">Full Name <span aria-hidden="true">*</span></label>
+        <input type="text" id="name" name="name" required placeholder="Your full name" />
+
+        <label for="email">Email Address <span aria-hidden="true">*</span></label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com" />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Optional" />
+
+        <label for="subject">Subject <span aria-hidden="true">*</span></label>
+        <input type="text" id="subject" name="subject" required placeholder="Brief subject of your message" />
+
+        <label for="message">Message <span aria-hidden="true">*</span></label>
+        <textarea id="message" name="message" required placeholder="Please share your questions or requirements here..."></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <section aria-label="Additional ways to connect">
+      <h2>Other Ways to Connect</h2>
+  
+      <p>If you prefer, you can also visit us in person during business hours. We recommend calling ahead to schedule a consultation or service appointment.</p>
+    </section>
+  </main>
+   <a href="index.html">BACK TO HOME</a>
+
+  <footer>
+    &copy; 2024 GreenScape Gardening Services. All rights reserved.
+  </footer>
+</body>
+</html>
